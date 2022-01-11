@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01_font 타이포그래피 속성</title>
+    <!-- Notosan -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Nanum Pen Script -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+</head>
+<style>
+    p.a {
+        font-family: 'Noto Sans KR', sans-serif;
+        /* 약간 기울림 */
+        font-style:oblique;
+    }
+
+    p.b {
+        font-family: 'Nanum Pen Script', cursive;
+        font-size: 20px;
+        line-height: 30px;
+        /* 더굵게 */
+        font-weight: bolder;
+    }
+
+    p.c {
+        /* small capital */
+        font-variant: small-caps;
+    }
+
+    p.d {
+        /* 24px/30px font-size/font-weight */
+        font: italic small-caps bold 24px/30px 'Nanum Pen Script', cursive;
+    }
+</style>
+<body>
+    <h1>타이포 그래픽 속성</h1>
+    <p class="a">
+        쓸쓸한 붙잡아 따뜻한 위하여서, 꾸며 별과 이는 꽃 칼이다. 석가는 청춘의 오직 있다. 길지 풀밭에 귀는 것이다.
+    </p>
+    
+    <p class="b">
+        쓸쓸한 붙잡아 따뜻한 위하여서, 꾸며 별과 이는 꽃 칼이다. 석가는 청춘의 오직 있다. 길지 풀밭에 귀는 것이다.
+    </p>
+    
+    <p class="c">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    </p>
+    
+    <p class="d">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    </p>
+</body>
+</html>
