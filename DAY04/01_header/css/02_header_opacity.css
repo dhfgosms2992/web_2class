@@ -14,17 +14,18 @@ address, em, i {font-style: normal;}
 a:focus {outline: none}
 button:focus {outline: none}
 
-/* layout */
 
-body {
+/* layout */
+body { 
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 14px;
+    color: #000;
+    line-height: 1.4;
 }
-
 
 .wrap {
     width: 100%;
-    margin:0 auto;
+    margin: 0 auto;
     overflow: hidden;
 }
 
@@ -37,23 +38,15 @@ header {
     line-height: 100px;
     color: #fff;
     z-index: 100;
-    /* 브라우저기준 */
-    position:fixed;
-    top:0;
-    /* header 요소에 투명도를 주어서 투명하게 0.3 */
+    position: fixed;
+    top: 0;
     background-color: rgba(96, 77, 62, 0.3);
-    /* 
-    이렇게 주면 안에 컨텐츠도 투명해지기때문에
-    반드시 배경에 투명도를 주어야함
-    background-color: #ddd;
-    opacity: 0; 
-    */
 }
 
 header .menuOpen {
     display: inline-block;
     position: absolute;
-    top:50%;
+    top: 50%;
     transform: translateY(-50%);
     width: 40px;
     height: 16px;
@@ -66,33 +59,31 @@ header .menuOpen span {
     height: 2px;
     background-color: #fff;
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
 }
 
-header .menuOpen span.mid {top: 50%;}
-header .menuOpen span.bot {top:100%;}
-
+header .menuOpen span.mid { top: 50%; }
+header .menuOpen span.bot { top: 100%; }
 
 header .book {
     display: inline-block;
-    float:left;
+    float: left;
     margin-left: 70px;
     height: 100%;
     font-size: 25px;
 }
 
 header .langs {
-    float:left;
+    float: left;
     margin-left: 220px;
     overflow: hidden;
     width: 150px;
 }
 
-header .langs li { float:left; width: 50%;}
-
-header .langs li:nth-child(1) {font-weight: bold;}
-header .langs li:nth-child(2) {color:#ddd;}
+header .langs li { float: left; width: 50%; }
+header .langs li:nth-child(1) { font-weight: bold;}
+header .langs li:nth-child(2) { color: #ddd; }
 header .langs li a {
     display: block;
     padding: 0 30px;
@@ -100,9 +91,10 @@ header .langs li a {
     text-transform: uppercase;
 }
 
-header .right {float:right;}
-header .right li {float:left;}
-header .right li p {letter-spacing: 1px;}
+header .right { float: right; }
+header .right li { float: left; }
+header .right li p { letter-spacing: 1px; }
 
-section.visual img {width: 100%;}
+section.visual img { width: 100%;  }
+
 
