@@ -5,8 +5,12 @@
    
 }
 
-/* flex-container */
+.color {
+    border: 5px solid red;
+}
 
+
+/* flex-container */
 .flex-container {
     display:flex;
     border: 1px  solid lightcoral;
@@ -37,3 +41,66 @@
 .now-wrap {flex-wrap: nowrap;}
 .wrap {flex-wrap: wrap;}
 .wrap-reverse {flex-wrap: wrap-reverse;}
+
+
+/* flex-flow */
+.row-wrap {
+    /* 
+    flex-flow
+    : flex-direction  flex-wrap 동시 지정하는 단축 속성
+    */
+    flex-flow: row wrap;
+    
+}
+
+/* 
+justify-content  
+가로정렬
+*/
+.center {justify-content: center;}
+.start {justify-content: flex-start;}
+.end {justify-content: flex-end;}
+.space-between {justify-content: space-between;}
+/* 
+.space-around {justify-content: space-around;}
+아이템과 아이템의 여백 시작점과 끝지점 여백 다르고 다른 부분은 균등하다
+*/
+.space-around {justify-content: space-around;}
+/* 
+.space-evenly {justify-content: space-evenly;}
+모든 여백 동일하다.
+*/
+.space-evenly {justify-content: space-evenly;}
+
+
+
+
+/* align-content */
+/* 
+교차축 
+세로 정렬 
+여러줄일때
+*/
+.cross {
+    height: 600px;
+}
+.content-stretch {align-content: stretch;}
+.content-stretch .item {height: auto;}
+.content-start {align-content: flex-start;}
+.content-end {align-content: flex-end;}
+.content-center {align-content: center;}
+.content-between {align-content: space-between;}
+.content-around {align-content: space-around;}
+
+
+/* align-items */
+/* 
+교차축 
+1줄일때
+*/
+.cross-center {align-items:center;}
+.cross-start {align-items:flex-start;}
+.cross-end {align-items:flex-end;}
+.cross-stretch {align-items:stretch;}
+.cross-stretch .item {height: auto; line-height: 100;}
+.cross-baseline {align-items: baseline;}

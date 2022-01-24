@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flex</title>
+    <title>다양한 flex</title>
     <link rel="stylesheet" href="css/flex.css">
 </head>
 <body>
     <div class="container">
+        <hr class="color">
         <!-- flex-direction -->
         <h2>flex-default</h2>
         <div class="flex-container">
@@ -17,6 +18,7 @@
             <div class="item">3</div>
             <div class="item">4</div>
         </div>
+        <hr  class="color">
         <!-- flex-direction:row; -->
         <h2>flex-direction:row;</h2>
         <div class="flex-container row">
@@ -25,6 +27,7 @@
             <div class="item">3</div>
             <div class="item">4</div>
         </div>
+        <hr  class="color">
         <!-- flex-direction:column; -->
         <h2>flex-direction:column;</h2>
         <div class="flex-container column">
@@ -33,6 +36,7 @@
             <div class="item">3</div>
             <div class="item">4</div>
         </div>
+        <hr  class="color">
         <!-- flex-direction:row-reverse; -->
         <h2>flex-direction:row-reverse;</h2>
         <div class="flex-container row-reverse">
@@ -41,6 +45,7 @@
             <div class="item">3</div>
             <div class="item">4</div>
         </div>
+        <hr  class="color">
         <!-- flex-direction:column-reverse; -->
         <h2>flex-direction:column-reverse;</h2>
         <div class="flex-container column-reverse">
@@ -49,7 +54,7 @@
             <div class="item">3</div>
             <div class="item">4</div>
         </div>
-        
+        <hr  class="color">
         <!-- flex-wrap -->
          <h2>flex-wrap: nowrap;</h2>
          <div class="flex-container nowrap">
@@ -66,7 +71,7 @@
              <div class="item">11</div>
              <div class="item">12</div>
          </div>
-
+         <hr  class="color">
          <!-- flex-wrap: wrap; -->
          <h2>flex-wrap: wrap;</h2>
          <div class="flex-container wrap">
@@ -83,7 +88,7 @@
              <div class="item">11</div>
              <div class="item">12</div>
          </div>
-
+         <hr  class="color">
          <!-- flex-wrap: wrap-reverse; -->
          <h2>flex-wrap: wrap-reverse;</h2>
          <div class="flex-container wrap-reverse">
@@ -100,6 +105,192 @@
              <div class="item">11</div>
              <div class="item">12</div>
          </div>
+
+         <hr  class="color">
+         <!-- flex-flow  -->
+         <h2>flex-flow: row wrap</h2>
+         <!-- flex wrap direction 단축 속성 -->
+         <div class="flex-container row-wrap">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+            <div class="item">11</div>
+            <div class="item">12</div>
+        </div>
+        <hr  class="color">
+        <!-- justify-content -->
+        <h2>justify-content: flex-start;</h2>
+        <div class="flex-container start">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
+        <hr  class="color">
+        <h2>justify-content: flex-end;</h2>
+        <div class="flex-container end">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
+        <hr  class="color">
+        <h2>justify-content: space-between;</h2>
+        <div class="flex-container space-between">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
+        <hr  class="color">
+        <h2>justify-content: space-around;</h2>
+        <div class="flex-container space-around">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
+        <hr  class="color">
+        <h2>justify-content: space-evenly;</h2>
+        <div class="flex-container space-evenly">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
+        <hr  class="color">
+        <!-- align-content -->
+        <h2>align-content: stretch;</h2>
+        <div class="flex-container cross wrap content-stretch">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+        </div>
+        <hr  class="color">
+        <h2>align-content: flex-start;</h2>
+        <div class="flex-container  cross wrap content-start">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+        </div>
+        <hr  class="color">
+        <h2>align-content: flex-end;</h2>
+        <div class="flex-container cross wrap content-end">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+        </div>
+        <hr  class="color">
+        <h2>align-content: flex-center;</h2>
+        <div class="flex-container cross wrap content-center">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+        </div>
+        <hr  class="color">
+        <h2>align-content: space-between;</h2>
+        <div class="flex-container cross wrap content-between">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+        </div>
+        <hr  class="color">
+        <h2>align-content: space-around;</h2>
+        <div class="flex-container cross wrap content-around">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+        </div>
+        <!-- align-items -->
+        <hr  class="color">
+        <h2>align-items: center;</h2>
+        <div class="flex-container cross cross-center">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+
+        <hr  class="color">
+        <h2>align-items: flex-start;</h2>
+        <div class="flex-container cross cross-start">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+
+        <hr  class="color">
+        <h2>align-items: flex-end;</h2>
+        <div class="flex-container cross cross-end">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+
+        <hr  class="color">
+        <h2>align-items: stretch;</h2>
+        <div class="flex-container cross cross-stretch">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+
+
+        <hr  class="color">
+        <h2>align-items: baseline;</h2>
+        <div class="flex-container cross cross-baseline">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
     </div>
 </body>
 </html>
