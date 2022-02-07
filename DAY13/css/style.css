@@ -14,6 +14,14 @@ a img {border: none;}
 li {list-style: none;}
 address, em, i {font-style: normal;}
 
+
+:root {
+    --main-color: #ff8342;
+    --impact-main-color:#f86010;
+    --dark-gray: #3a3c4e;
+    --white: #fff;
+}
+
 /* 레이아웃 */
 body {font-family: 'Noto Sans KR', sans-serif; font-size: 14px;} /* 한글 전체 폰트 */
 .en {font-family: 'Exo 2', sans-serif;} /* 영문 전체 폰트 */
@@ -63,7 +71,7 @@ hovver 마우스 올렸을떄
 focus 클릭했을때
  */
 .inner-header .gnb li a:hover,.inner-header .gnb li a:focus {
-    color: #ff8342;
+    color: var(--main-color)
 } 
 
 /* TNB */
@@ -87,7 +95,7 @@ focus 클릭했을때
 .inner-header .tnb li:last-child a {
     width: 105px;
     line-height: 2;
-    border: 1px solid #fff;
+    border: 1px solid var(--white);
     border-radius: 30px;
     margin-top: 35px;
 }
@@ -142,7 +150,7 @@ section.main .mainTitle .view {
     font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    border: 1px solid #fff;
+    border: 1px solid var(--white);
     border-radius: 40px;
     overflow: hidden;
     position: relative;
@@ -174,3 +182,164 @@ section.main .mainTitle .view:hover::after {
     50%{width:100%; left:0;}
     90%{left: 100%;}
 }
+
+/* section 타이틀 (공통) */
+section .title {color: #000; text-align: center;}
+
+section .title h2{
+    font-size: 45px; 
+    margin-bottom: 5px; 
+    font-weight: normal;
+}
+
+section .title h2 span{color: var(--main-color);}
+section .title p{font-size: 18px; color: #555;}
+
+
+/* section - about 섹션 어바웃 */
+
+section.about {background-color: var(--white); padding: 80px 0;}
+
+section.about ul { 
+    margin: 30px auto; 
+    width: 1400px; 
+    border-bottom: 1px solid #ddd; 
+    overflow: hidden;
+}
+
+section.about ul li {
+    float:left; 
+    width: calc(100%/3);
+}
+
+section.about ul li a { 
+    display:block;
+    width: 100%;
+    height: 100%;
+}
+
+section.about ul li a p.img {
+    width: 100%; 
+    overflow: hidden;
+}
+
+section.about ul li a p.img img {
+    width: 100%;
+    height: auto;
+    transition: all 0.8s;
+}
+
+/* 마우스 hover / focus - 이미지 확대 */
+section.about ul li a:hover p.img img, 
+section.about ul li a:focus p.img img {
+    transform: scale(1.2);
+    transition: all 1s;
+}
+
+
+section.about ul li a .text {padding: 30px;}
+section.about ul li a .text h3 {font-size: 20px; margin-bottom: 10px;}
+section.about ul li a .text p {font-size: 16px; margin-bottom: 10px;}
+
+
+
+section.about ul li a .text p.more {
+ text-transform: uppercase;
+ font-weight: bold;
+ padding-left: 40px;
+ position: relative;
+}
+/* 가상선택자 */
+/* 폰스어썸 스타일 커스터마이징 */
+section.about ul li a .text p.more::before {
+    font-family: FontAwesome;
+    content: '\f178';
+    /* 화살표 크기 font-size (아이콘 사이즈 font-size) 로*/
+    font-size: 20px;
+    background-color: #ff8342;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    left:0;
+    border-radius: 50%;
+}
+
+section.about ul li a .text p.more:hover::before {
+    color: #ff8342;
+    background-color: black;
+}
+
+/* section : innovations */
+
+section.innovations {margin-bottom: 150px;}
+
+section.innovations .imgBox {
+    width: 1400px; 
+    height: 540px;
+    background:url(../img/product_1.jpg) no-repeat center/cover;
+    position:relative;
+}
+
+section.innovations .imgBox .inner {
+    /* 변수 지정하는 방법  root: {안에 별도록 변수값을 만들어서 그 변수명으로 표기}*/
+    background-color: var(--dark-gray);
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom:-50px;
+}
+
+section.innovations .imgBox .inner h3 {
+    background-color: var(--white);
+    padding: 25px 45px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+section.innovations .imgBox .inner h3 span {
+    color: var(--main-color);
+}
+section.innovations .imgBox .inner .bottom {
+    padding: 35px 85px;
+    box-sizing: border-box;
+    color:var(--white);
+    overflow: hidden;
+    
+}
+section.innovations .imgBox .inner .bottom p {
+ float:left;
+}
+section.innovations .imgBox .inner .bottom a {
+    float:right;
+    padding: 7px 30px; 
+    background-color: var(--main-color);
+    border-radius: 50px;
+}
+
+section.innovations .imgBox .inner .bottom a:hover,
+section.innovations .imgBox .inner .bottom a:focus {
+    background-color: var(--impact-main-color);
+}
+
+/* section.me */
+section.me {
+    margin-bottom: 150px;
+    padding: 80px 0;
+    background: url(../img/me.jpg) no-repeat center/cover;
+}
+
+section.me ul .list {width: 1400px; margin: 50px auto; border-top: 1px solid #000; border-bottom: 2px solid ;}
+section.me ul .list > li {}
+section.me ul .list > li:nth-child(1) {}
+section.me ul .list > li h2 {}
+section.me ul .list > li h2 span {}
+section.me ul .list > p {}
+section.me ul .list > a {}
+section.me ul .list > a span {}
+section.me ul .in {}
+section.me ul .in li {}
+section.me ul .in li em {}
+section.me ul .in li p::before {}
+section.me button {}
