@@ -277,6 +277,8 @@ section.innovations {margin-bottom: 150px;}
 section.innovations .imgBox {
     width: 1400px; 
     height: 540px;
+    /* 가운데정렬 */
+    margin: 50px auto;
     background:url(../img/product_1.jpg) no-repeat center/cover;
     position:relative;
 }
@@ -330,7 +332,13 @@ section.me {
     background: url(../img/me.jpg) no-repeat center/cover;
 }
 
-section.me ul .list {width: 1400px; margin: 50px auto; border-top: 1px solid #000; border-bottom: 2px solid ;}
+section.me ul.list {
+    width: 1400px; 
+    margin: 50px auto; 
+    border-top: 1px solid #000; 
+    border-bottom: 2px solid;
+}
+
 section.me ul .list > li {}
 section.me ul .list > li:nth-child(1) {}
 section.me ul .list > li h2 {}
