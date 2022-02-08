@@ -458,7 +458,10 @@ section.sns ul li a p.img {
     position:relative;
 }
 
-section.sns ul li a p.img img {width: 100%;}
+section.sns ul li a p.img img {
+    width: 100%;
+    height: 300px;
+}
 
 
 /*  이미지 호버 가상 선택 */
