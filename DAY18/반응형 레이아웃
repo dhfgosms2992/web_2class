@@ -82,3 +82,15 @@ pc
 - orientation                   : width 가 길면 landscape, height 가 길면 portrait
 - aspect-ratio                  : width/height 비율을 판단
 - color                         : 장치의 최대 색상 수를 조건으로 판단
+
+# 뷰포트(viewport) 
+: 실제 컨텐츠들이 표시되는 영역
+
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+
+*width              : 뷰포트 너비 설정 (device-width, 200px~1000px)
+*initial-scale      : 초기 배율 설정 (0.0 ~ 10.0)
+*minimum-scale      : 최소 축소 비율 설정 (0.0 ~ 10.0)
+*maximum-scale      : 
+
+#반응형에 적합한 레이아웃 기술 
